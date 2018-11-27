@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Remove</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#remove").click(function(){
+				$("p").remove("#1");
+				$("#rm").remove();
+			})
+
+			$("#empty").click(function(){
+				$("#rm").empty();
+			})
+		})
+	</script>
+	<style>
+	#rm{
+		width: 400px;
+		height: 150px;
+		background: yellow;
+		color: blue;
+		border: 1px solid red;
+		box-sizing: border-box;
+	}
+
+	#emp{
+		width: 400px;
+		height: 150px;
+		background: red;
+		color: #fff;
+		border: 1px solid gray;
+		box-sizing: border-box;
+	}
+</style>
+<div id="rm">
+	<p>This is paragraph</p>
+	<p>This is paragraph</p>
+	<p>This is paragraph</p>
+</div>
+<br>
+<br>
+<div id="emp">
+	<p id="1">This is paragraph 1 </p>
+	<p id="2">This is paragraph 2 </p>
+	<p id="3">This is paragraph 3</p>
+</div>
+<br>
+<button id="remove">Remove</button>
+<button id="empty">Empty</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuey-get</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#text").click(function(){
+				alert($("#txt").text());
+			})
+			$("#html").click(function(){
+				alert($("#content-html").html());
+			})
+		})
+	</script>
+
+	<p id="txt">This is paragraph</p>
+	<p id="content-html">Chao mung <b>jQuery</b> co gang nao!</p>
+	<button id="text">Text</button>
+	<button id="html">HTML</button>
+</body>
+</html>

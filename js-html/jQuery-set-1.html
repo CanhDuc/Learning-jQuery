@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Set Content</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#show").text("Set txt : Do Duc Canh co gang len!");
+			})
+
+			$("button").click(function(){
+				$("#inp").val("Set value for input");
+			})
+		})
+	</script>
+	<p>Hello : </p>
+	<p id="show"></p>
+	<br>
+	<input id="inp" type="text" value="">
+	<button>Show text</button>
+</body>
+</html>

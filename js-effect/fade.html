@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fade</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#one").fadeToggle();
+				$("#two").fadeToggle("slow");
+				$("#three").fadeToggle(1000);
+			})
+		})
+	</script>
+	<style>
+	.square{
+		margin-top : 30px;
+		width: 100px;
+		height: 100px;
+		clear: both;
+	}
+	#one{
+		background: orange;
+	}
+	#two{
+		background: red;
+	}
+	#three{
+		background: green;
+	}
+</style>
+<button>Hide/Show</button>
+<div class="square" id="one">
+
+</div>
+<div class="square" id="two">
+
+</div>
+<div class="square" id="three">
+
+</div>
+</body>
+</html>

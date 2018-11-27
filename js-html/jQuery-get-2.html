@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Value in input</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				alert($("#txt").val());
+			})
+		})
+	</script>
+	<p>Name : <input id="txt" type="text" value="Hehe"></p>
+	<button>Value</button>
+</body>
+</html>

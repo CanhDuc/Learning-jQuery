@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Next & NextAll & Next Until</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("h1").next().addClass("css-one");
+		})
+		$(document).ready(function(){
+			$("h2").nextAll().addClass("css-two");
+		})
+		$(document).ready(function(){
+			$("h3").nextUntil("#end").addClass("css-three");
+		})
+	</script>
+	<style>
+		.css-one{
+			border : 1px solid red;
+			color : green;
+		}
+
+		.css-two{
+			border : 3px solid yellow;
+			color : blue;
+		}
+
+		.css-three{
+			border : 5px solid orange;
+			color : purple;
+		}
+	</style>
+	<div>
+		<span>Viet Nam</span>
+		<p>Hello every one</p>
+		<h1>jQuery</h1>
+		<h2>Learning jQuery</h2>
+		<span>Viet Nam</span>
+		<span>Viet Nam</span>
+		<span>Viet Nam</span>
+		<span>Viet Nam</span>
+		<span>Viet Nam</span>
+		<h3>Next Until</h3>
+		<p>Hello every one</p>
+		<p>Hello every one</p>
+		<p>Hello every one</p>
+		<p id="end">End Next Until</p>
+		<p>Hello every one</p>
+	</div>
+</body>
+</html>

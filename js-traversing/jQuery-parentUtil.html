@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ParentsUntil</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("span").parentsUntil("ul").addClass("css");
+		})
+	</script>
+	<style>
+	.ancestors *{ 
+		display: block;
+		border: 2px solid lightgrey;
+		color: lightgrey;
+		padding: 5px;
+		margin: 15px;
+	}
+	.css{
+		border: 1px solid red;
+	}
+</style>
+<div class="ancestors">
+	<div style="width:500px;">div (great-grandparent)
+		<ul>ul (grandparent)  
+			<li>li (direct parent)
+				<span>span</span>
+			</li>
+		</ul>   
+	</div>
+</div>
+</body>
+</html>

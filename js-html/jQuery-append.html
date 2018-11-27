@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Append</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#text").click(function(){
+				$("p").addClass("css").append("<br/> <span>Next parapraph</span>");
+			})
+			$("#list").click(function(){
+				$("ol").addClass("style-css").append("<li> CNTT2-2 K60 </li>");
+			});
+		})
+	</script>
+	<style>
+		.css span{
+			color : red;
+			font-size: 14px;
+		}
+		.style-css li{
+			color : blue;
+			font-size: 12px;
+			text-transform: capitalize;
+		}
+	</style>
+	<p>This is prapraph</p>
+	<p>This is prapraph</p>
+	<br>
+	<ol>
+		<li>CNTT2-2</li>
+		<li>CNTT2-2</li>
+		<li>CNTT2-2</li>
+		<li>CNTT2-2</li>
+		<li>CNTT2-2</li>
+	</ol>
+	<button id="text">Append text</button>
+	<button id="list">Append list item</button>
+</body>
+</html>

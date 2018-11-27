@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery-Selector</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p#select-id").hide();
+				$(".select-class").hide();
+			})
+		})
+
+		// $(document).ready(function(){
+		// 	$("button").click(function(){
+		// 		$("*").hide();
+		// 	})
+		// })
+	</script>
+	<p id="select-id">Bai hoc jQuery dau tien</p>
+	<h1>Can cu bu thong minh</h1>
+	<h1 class="select-class">Co cong mai sat co ngay nen kim</h1>
+	<p id="select-id">Hay dam me thanh cong se theo duoi ban</p>
+	<button>Click me</button>
+</body>
+</html>

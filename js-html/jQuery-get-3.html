@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Attributes</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#dt").click(function(){
+				alert($("#linkdt").attr("href"));
+			})
+
+			$("#fb").click(function(){
+				// alert($("#linkfb").attr("href"));
+
+				alert($("#linkfb").attr("title"));
+			})
+		})
+	</script>
+	<a id="linkdt" href="dantri.vn">Dan tri</a>
+	<br>
+
+	<a id="linkfb"href="facebook.com" title="This is title"> Facebok</a>
+	<br>
+	<button id="dt">Get-Link-dantri</button>
+	<button id="fb">Get-Link-face</button>
+</body>
+</html>

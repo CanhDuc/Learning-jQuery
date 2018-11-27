@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#menu").click(function(){
+				$("#content").slideToggle();
+			})
+		})
+	</script>
+	<style>
+		#menu{
+			width: 980px;
+			height: 80px;
+			margin: 0px auto;
+			padding-top: 25px;
+			text-align: center;
+			font-size: 30px;
+			color: #fff;
+			background: green;
+			clear: both;
+			box-sizing: border-box;
+		}
+		#content{
+			width: 980px;
+			height: 150px;
+			margin: 0px auto;
+			background: orange;
+			display: none;
+			clear: both;
+		}
+	</style>
+	<div id="menu">
+		Menu
+	</div>
+	<div id="content"></div>
+</body>
+</html>

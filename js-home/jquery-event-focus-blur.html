@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery-event-focus-blur</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			// $("#email").focus(function(){
+			// 	$(this).css("background","red");
+			// 	$(this).css("border","5px solid yellow");
+			// 	$(this).css("font-size","30px");
+			// })
+
+			// $("#email").blur(function(){
+			// 	$(this).css("background","#fff");
+			// 	$(this).css("border","5px solid yellow");
+			// 	$(this).css("font-size","10px");
+			// })
+
+			$("input").focus(function(){
+				$(this).css("background","red");
+				$(this).css("border","5px solid yellow");
+				$(this).css("font-size","30px");
+			})
+
+			$("input").blur(function(){
+				$(this).css("background","#fff");
+				$(this).css("border","5px solid yellow");
+				$(this).css("font-size","10px");
+			})
+		})
+	</script>
+	Email :    <input id="email" type="text" >
+	<br>
+	<br>
+	Password : <input id="password" type="text" >
+</body>
+</html>

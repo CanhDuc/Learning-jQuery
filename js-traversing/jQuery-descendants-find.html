@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Find</title>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#div1").find("#six, #five, #ten").addClass("css");
+			$("#div2").find("*").addClass("css");
+		})
+	</script>
+	<style>
+	.ancestors *{ 
+		display: block;
+		border: 2px solid lightgrey;
+		color: lightgrey;
+		padding: 5px;
+		margin: 15px;
+	}
+	.css{
+		border: 1px solid red;
+	}
+</style>
+<div class="ancestors">
+	<div id="div1" style="width:500px;">div (great-grandparent)
+		<p>1</p>  
+		<p>2</p> 
+		<p>3</p> 
+		<p>4</p> 
+		<p id="five">5</p> 
+		<p id="six">6</p> 
+		<p>7</p> 
+		<p>8</p> 
+		<p>9</p> 
+		<p id="ten">10</p> 
+	</div>
+
+	<div id="div2" style="width:500px;">div (great-grandparent)
+		<p>1</p>  
+		<p>2</p> 
+		<p>3</p> 
+		<p>4</p> 
+		<p id="five">5</p> 
+		<p id="six">6</p> 
+		<p>7</p> 
+		<p>8</p> 
+		<p>9</p> 
+		<p id="ten">10</p> 
+	</div>
+</div>
+</body>
+</html>
